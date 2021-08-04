@@ -1,0 +1,221 @@
+html {
+    /*font-size: 20px;
+    font-family: "Noto Sans", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.googlelogo.png {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-end;
+    background-color: aqua;
+}
+
+.menu {
+    text-align: end;
+    padding: 20px;
+}
+button {
+    color: white;
+    background-color: steelblue;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    
+    
+    
+    
+}
+.apps {
+    vertical-align: middle;
+    width: 30px;
+
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 112px;
+    height: 160px;
+}
+
+.searchbox {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.searchbox > .searchInput {
+    width: 32%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 100px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/google_homepage/images/searchb.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    opacity: 0.6;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.buttons > .button{
+    background-color: rgba(253, 254, 255, 0.938);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.lang {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'header header header'
+                            'links carbon privacy';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(242, 244, 244, 0.865);
+    
+
+}
+
+.links {
+    grid-area: links;
+    word-spacing: 20px;
+    padding-left: 20px;
+}   
+
+.carbon {
+    grid-area: carbon;
+    color: rgb(79, 79, 79);
+    justify-self: center;
+}
+
+.leaf {
+    width: 20px;
+
+}
+
+.privacy {
+    grid-area: privacy;
+    word-spacing: 20px;
+    justify-self: right;
+    padding-right: 20px;
+    color: rgb(79, 79, 79);
+}
+
+
+.header {
+    grid-area: header;
+    color: rgb(79, 79, 79);
+    padding: 15px;
+}
+
+@media only screen and (max-width:800px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'header'
+        'links'
+        'carbon'
+        'privacy';
+                               
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .privacy {
+        width: 100%;
+    }
+
+}
+
+
+
+nav a:visited,
+nav a:link {
+    color: black;
+    text-decoration: none;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+.apps:hover {
+    border-radius: 40px;
+    background-color: rgb(188, 184, 184);
+}
+
+button:hover {
+    background-color: rgb(0, 103, 188);}
+
+.buttons > .button:hover {
+    background-color: rgba(236, 242, 244, 0.989);
+} 
+
+.lang > a:visited,
+.lang > a:link {
+    color: blue;
+    text-decoration: none;
+
+}
+.lang a:hover {
+    text-decoration: underline;
+}
+
+
+.links > a:visited,
+.links > a:link {
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+    
+}
+
+.carbon > a:visited,
+.carbon > a:link {
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+}
+.carbon a:hover {
+    text-decoration: underline;
+}
+
+.privacy > a:visited,
+.privacy > a:link {
+    color:rgb(79, 79, 79);
+    text-decoration: none;
+}
+.privacy a:hover {
+    text-decoration: underline;
+}
